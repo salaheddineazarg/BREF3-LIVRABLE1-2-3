@@ -6,9 +6,7 @@
     font-family: 'Inria Sans', sans-serif;
     font-family: 'Inter', sans-serif;
 }
-#navbar{
-    display: ;
-}
+
 
 /*  start nav */
 #logo{
@@ -21,8 +19,12 @@
 .nav{
     display: flex;
     flex-direction: row;
-    background-color: brown;
+    justify-content: space-between;
+    background-color:#F53627;
     height: 90px ;
+}
+#close_menu{
+    display: none;
 }
 .navbar-nav{
     display: flex;
@@ -30,7 +32,9 @@
 .nav1{
 
  margin-top: 3%; 
-    transform: translateX(207%);
+ padding: 0 20px;
+ 
+   
 }
 .nav1 .navbar-nav .nav-item{
     list-style: none;
@@ -40,6 +44,20 @@
     text-decoration: none;
     color: #ffffff;
     margin:15px ;
+}
+#navbar{
+    
+    display: none;
+    
+}
+#close_menu{
+    position: absolute;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    left: 80%;
+    top: 3%;
+    z-index:2 ;
 }
 /* end nav */
 
@@ -83,6 +101,9 @@
 height: 400px;
 
 }
+.menu-card1{
+    display: flex;
+}
 
 
 
@@ -102,6 +123,7 @@ height: 400px;
     width: 140px;
     height: 60px;
     margin-left: 65px;
+
 
     background-color: #ffffff;
     
@@ -130,31 +152,16 @@ height: 400px;
     height: 400px;
     margin:15px ;
 } 
-/* .row1{
-    display: flex;
-    flex-direction: row;
 
-}
-.row2{
-    display: flex;
-    flex-direction: row;
-
-}
-.row3{
-    display: flex;
-    flex-direction: row;
-
-} */
 .loca{
-    width: 638px; 
+    width: 100%; 
     display: flex;
+    justify-content: space-between;
     background-color: #F5F5F5;
     margin-bottom: 10%;
     
 }
-.map{
 
-}
 .P{
     color: #000;
     margin-left: 10%;
@@ -247,7 +254,7 @@ display:flex ;
  }
  .contact{
     display: flex;
-    
+    flex-direction: column;
     width: 1263px;
     height: 600px;
     background-color: #E3E3E3;
@@ -255,15 +262,22 @@ display:flex ;
  }
  .col1{
     display: flex;
-    flex-direction: column;
+    gap: 130px;
+    flex-direction: row;
+    justify-content: center;
     margin-left:100px ;
-    margin-top: 70px;
+    margin-top: 50px;
+    transform: translateX(-5%);
  }
  .col2 {
     display: flex;
-    flex-direction: column;
+    gap: 130px;
+    flex-direction: row;
+    justify-content: center;
      margin-left: 20%;
-     margin-top: 70px;
+     margin-top: 50px;
+     transform: translateX(-13%);
+     
  }
  input{
  width: 400px;
@@ -272,20 +286,23 @@ margin-bottom: 50px;
 border: none;
  }
  .sub{
- position: relative;
 width: 200px;
 height: 50px;
-left: 505px;
-top:-100px;
+margin-left: 40%;
+margin-top: 30Px;
 background: #F53627;
 border: none;
 color: #FFFFFF;
 font-size: 20px;
+cursor: pointer;
 
  }
  textarea{
+    width:400px ;
+    height: 120px;
     border-radius: 0 0 20px 0;
     border: none;
+    transform: translateX(40%);
  }
  .tcover{
     font-size:50px ;
@@ -296,6 +313,8 @@ font-size: 20px;
  }
  .menu{
     display: flex;
+    flex-wrap: wrap;
+
  }
   .menu .menu-nav .canvas2{
     width: 150px; 
@@ -309,26 +328,28 @@ font-size: 20px;
     height: 650px;
     background-color: #FFAA18;
 }
-.list{
+.list {
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
-.lis{
+.lis {
  color: #FFFFFF;
 font-weight: 700;
 font-size: 50px;
 line-height: 60px;
-margin-bottom: 150px;
+margin-bottom: 100px;
 margin-top: 2%;
+cursor: pointer;
 
 }
-.lis1{
+.lis1 {
     color: #FFFFFF;
 font-weight: 700;
 font-size: 50px;
 line-height: 60px;
+cursor: pointer;
 
 margin-top: 2%;
 
@@ -363,6 +384,9 @@ margin-top: 2%;
     margin-left: 10%;
     margin-bottom: 20%;
 }
+.price{
+    display: flex;
+}
 .prix{
     text-align: center;
     margin-top: 10%;
@@ -385,6 +409,16 @@ color: #CEA100;
     gap: 5px;
 
 }
+.menu-card1{
+    display: none;
+    flex-wrap: wrap;
+}
+.menu-card2{
+
+   display: none;
+    flex-wrap: wrap;
+   
+}
 .pan{
 display: flex;
 justify-content: space-around;
@@ -402,7 +436,8 @@ margin-bottom: 10%;
 }
 .total{
     display: flex;
-    margin-top: 110%;
+    margin-top: 10%;
+    
    
 
 }
@@ -413,12 +448,64 @@ margin-bottom: 10%;
  
 
 }
+.depan{
+    display:none;
+     justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+
+
+}
+.dename{
+    display: flex;
+    text-align: end;
+}
+.dename p{
+    margin-top: 20%;
+    text-align: end;
+}
+.deprix{
+    display: flex;
+}
+.deprix p{
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.imgde{
+    width: 30px;
+    height: 50px;
+    
+}
+
 label{
     font-weight: 400;
 font-size: 20px;
 line-height: 20px
 }
-
+.pantest{
+    width: 100%;
+    height:400px;
+    margin-top: 10px; 
+    z-index: 1;
+    overflow-y:scroll;
+}
+.pantest p {
+    word-spacing:250px;
+}
+.testc{
+    width: 80% ;
+    height: 70%;
+    background-color:white ;
+    color: #000;
+    z-index: 1;
+    position: absolute;
+    top:730px;
+    left: 10%;
+    display: none;
+}
 
 
 
@@ -432,24 +519,27 @@ height: 29px;
 left: 5%;
 top: 860px;
 fill: #F53627;
+cursor: pointer;
 
 }
 .plus2{
     position: absolute;
-width: 1000px;
-height: 29px;
-left: 28%;
-top: 860px;
-fill: #F53627;
-
+    width: 100px;
+    height: 29px;
+    left: 64%;
+    top: 860px;
+    fill: #F53627;
+    cursor: pointer;
 }
 .plus3{
     position: absolute;
-width: 1000px;
-height: 29px;
-left: 51%;
-top: 860px;
-fill: #F53627;
+    width: 100px;
+    height: 29px;
+    left: 86%;
+    top: 860px;
+    fill: #F53627;
+    cursor: pointer;
+
 
 }
 .plus4{
@@ -459,7 +549,14 @@ height: 29px;
 left: -112%;
 top: 250px;
 fill: #F53627;
+cursor: pointer;
 
+}
+.mytest{
+    display: none;
+    width:300px;
+    height: 20px; ;
+    background-color: #F53627;
 }
 
 

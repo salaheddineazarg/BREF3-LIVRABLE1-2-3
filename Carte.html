@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <!-- Java Script -->
+  <script defer src="main.js"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Sakura Sushi</title>
+</head>
+
+<body>
+  <!-- start nav -->
+  <nav class="nav ">
+    <a href="index.html">
+      <img id="logo" src="images/SAKURA_SUSHI-removebg-preview.png" alt="">
+    </a>
+    <div class="nav1">
+
+      <ul class="navbar-nav" id="togle-menu">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Carte.html">CARTE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html"> ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">CONTACT</a>
+        </li>
+        <svg onclick="toggle0()" id="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+        </svg>
+      </ul>
+    </div>
+    <svg onclick="toggle()" id="navbar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+      viewBox="0 0 30 30">
+      <path
+        d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+      </path>
+    </svg>
+  </nav>
+  <!-- end nav -->
+  <!-- cover -->
+  <div>
+    <img id="cover" src="images/COVER2.jfif" alt="">
+  </div>
+  <!-- end cover -->
+
+
+  <!-- text cover -->
+  <div class="tcover">
+    <p>
+    <pre><b>
+        Each Sushi Represents A 
+        Diffrent Aatch Of Sea Under A
+         Diffrent Shade Of Sky 
+       </b></pre>
+    </p>
+  </div>
+
+
+
+
+  <div class="menu">
+    <div class="menu-nav">
+      <div id="resp">
+        <h1 style="margin-top:10px ;" id="ot"><b><i>MENU</i></b></h1>
+        <canvas class="canvas2"></canvas>
+      </div>
+      <ul class="list">
+        <li class="lis"><a onclick="menus()" ><b>Salad</b></a></li>
+        <li class="lis"><a onclick="menuo()" ><b>Obentu</b></a></li>
+        <li class="lis1"><a onclick=" menup()" ><b>Plats</b></a></li>
+
+      </ul>
+    </div>
+   
+    <div cLass="menu-card"> 
+      <!-- card1 -->
+      <div class="mcard"  id="item1" >
+
+        <img class="salad" src="images/SALAD2.jpg" alt="">
+        <p class="meal">SALAD1</p>
+        <div class="price">
+        <P class="prix"><b>50 </b></P>
+         <P class="prix"><b>Dhs</b></P> 
+
+           </div>
+        <svg onclick=" moveToCarte(item1)"  class="plus1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+     
+
+
+     
+
+
+      <!-- card end  -->
+      <!-- card2 -->
+
+      <div class="mcard" id="item2">
+        <img class="salad" src="images/SALAD3.png" alt="">
+        <p class="meal">SALAD2</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+           </div>
+        <svg onclick=" moveToCarte(item2)"  class="plus2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+
+
+      <!-- card end  -->
+
+      <!-- card3 -->
+
+      <div class="mcard" id="item3">
+        <img class="salad" src="images/SALAD4.png" alt="">
+        <p class="meal">SALAD3</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P> 
+          <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg onclick=" moveToCarte(item3)"   class="plus3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+      <!-- card end  -->
+
+
+
+
+      <!-- card4 -->
+
+      <div class="mcard4" id="item4">
+        <img class="salad" src="images/SALAD5.png" alt="">
+        <p class="meal">SALAD4</p>
+       <div class="price">
+        <P class="prix"><b>50 </b></P>
+         <P class="prix"><b>Dhs</b></P> 
+
+           </div>
+        <svg    onclick="moveToCarte(item4)"  class="plus4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- card end  -->
+
+
+    <!-- obentu  -->
+
+
+    <div class="menu-card1">
+      <!-- card1 -->
+      <div class="mcard"id="itemb1">
+
+        <img class="salad" src="images/BENTO1.png" alt="">
+        <p class="meal">OBENTU1</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg onclick="moveToCarte(itemb1)" class="plus1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+
+      <!-- card end  -->
+
+      <!-- card2 -->
+
+      <div class="mcard" id="itemb2">
+        <img class="salad" src="images/BENTO2.png" alt="">
+        <p class="meal">OBENTU2</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg  onclick="moveToCarte(itemb2)" class="plus2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+
+
+      <!-- card end  -->
+
+      <!-- card3 -->
+
+      <div class="mcard" id="itemb3">
+        <img class="salad" src="images/BENTO3.png" alt="">
+        <p class="meal">OBENTU3</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg  onclick="moveToCarte(itemb3)" class="plus3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+      <!-- card end  -->
+    </div>
+    <!-- END OBENTU -->
+
+
+
+    <!-- PLATS  -->
+
+
+    <div class="menu-card2">
+      <!-- card1 -->
+      <div class="mcard" id="itemp1">
+
+        <img class="salad" src="images/PLAT1.png" alt="">
+        <p class="meal">PLAT1</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg  onclick="moveToCarte(itemp1)" class="plus1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+
+      <!-- card end  -->
+
+      <!-- card2 -->
+
+      <div class="mcard" id="itemp2">
+        <img class="salad" src="images/PLAT2.png" alt="">
+        <p class="meal">PLAT2</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg onclick="moveToCarte(itemp2)" class="plus2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+
+
+      <!-- card end  -->
+
+      <!-- card3 -->
+
+      <div class="mcard" id="itemp3">
+        <img class="salad" src="images/PLAT3.png" alt="">
+        <p class="meal">PLAT3</p>
+        <div class="price">
+          <P class="prix"><b>50 </b></P>
+           <P class="prix"><b>Dhs</b></P> 
+  
+             </div>
+        <svg onclick="moveToCarte(itemp3)" class="plus3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+        </svg>
+      </div>
+
+      <!-- card end  -->
+    </div>
+    <!-- END PLATS -->
+
+
+  </div>
+
+
+  
+
+  </div>
+
+
+  <!-- PANIER -->
+  <div class="ourteam">
+    <h1 id="ot"><b><i>PANIER</i></b></h1>
+    <canvas class="canvas1"></canvas>
+  </div>
+
+  <!--  -->
+  <div class="pan">
+    <div>
+      <img class="rest" src="images/restaurant.jfif" alt="">
+    </div>
+    <div class="panier">
+      <div class="pantest" id="pantest">
+
+
+
+
+      </div>
+     
+     
+      <div class="total">
+      
+       <label><B>TOTAL:</B></label> 
+        
+          <input id="total" type="text" value="0"> 
+          <p>Dhs</p>
+        
+</div>
+
+      </div>
+    
+  </div>
+  <!-- panier end  -->
+   <!-- design panier -->
+       <!-- <div class="depan" id="item1">
+        <div class="dename">
+        <img class="imgde" src="images/SALAD2.jpg" alt="">
+        <p><b>SALAD1</b> </p>
+      </div>
+        <div class="deprix">
+        <P class="prix"><b>50 </b></P>
+        <P class="prix"><b>Dhs</b></P></div>
+
+
+      </div>
+   -->
+  
+  <!-- footer -->
+  <section class="footer">
+    <div>
+      <h1 class="sakura">
+        <Pre style="margin-bottom: 20px;">
+            <i>
+            SAKURA 
+              SUSHI</i></Pre>
+      </h1>
+      <p>
+      <pre class=" text1">
+                20706 Heart Lake Road
+        
+                Caledon, ON L7K 2A2 </pre>
+      </p>
+
+      <p>
+      <pre class=" text1">
+                OrderSakura@sushirestaurant.ca
+        
+                  +321764683667
+            </pre>
+      </p>
+    </div>
+    <div class="time">
+      <h3 class="title"><b>TIME</b></h3>
+      <P>
+      <PRE class="text2">
+            Lunch
+
+            Everyday
+
+          12 PM - 3 PM
+
+            Dinner
+
+           Everyday
+
+          4 PM - 10 PM
+
+  (last reservation taken at 8 PM)
+        </PRE>
+      </P>
+
+
+    </div>
+    <div class="follow">
+      <h3 class="title2"><b>Follow US</b></h3>
+      <div class="icon">
+        <i id="fb" class="fa-brands fa-facebook-f"></i>
+        <i id="inst" class="fa-brands fa-instagram"></i>
+        <i id="pin" class="fa-brands fa-pinterest-p"></i>
+      </div>
+      <div class="med">
+        <P class="media">Facebook</P>
+        <p class="media">Instagram</p>
+        <p class="media">Pinterest</p>
+      </div>
+
+
+    </div>
+
+
+
+
+
+  </section>
+  <!-- footer end -->
+
+
+
+
+
+</body>
+
+</html>

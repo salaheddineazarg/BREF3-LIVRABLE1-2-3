@@ -1,0 +1,330 @@
+@media screen and (max-width:390px) {
+    body {
+        width: 100%;
+       
+        
+        
+    }
+
+    /* index */
+    /* nav */
+
+    .nav {
+        display: flex;
+
+        flex-direction: row;
+        background-color:#F53627;
+        height: 50px;
+        width:100%;
+    }
+
+
+    #togle-menu {
+           display: none;
+        flex-direction: column;
+        gap: 15%;
+        padding-top: 90px;
+        position: absolute;
+        top: 2%;
+        right: 50%;
+        background-color:#F53627;
+        height: 80%;
+        width: 50%;
+        align-items: center;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    #navbar {
+        
+        display: block;
+        fill: black;
+        cursor: pointer;
+        margin-top: 10px;
+        transform: translateX(-20%);
+
+
+    }
+
+    #logo {
+        width: 60px;
+        height: 35px;
+        margin-top: 10%;
+    }
+
+    /* end nav */
+    #cover {
+        width: 100%!important;
+
+    }
+
+    #ot {
+        text-align: center;
+        font-weight: 1100px;
+        font-size: 30px;
+        line-height: 22px
+    }
+
+    .canvas1 {
+        transform: translateX(11%);
+        width: 260px;
+        margin: 0%;
+
+
+    }
+
+
+
+
+
+
+
+    .chef-card {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+        word-wrap: break-word;
+
+    }
+
+    #chef {
+
+        width: 350px;
+        height: 350px;
+        margin-top: 10px;
+
+    }
+
+    .text {
+        width: 100%;
+        height: 500px;
+    }
+
+    .lorem {
+        width: auto;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    .pchef {
+        margin-left: 4%;
+    }
+
+
+
+    .button {
+        transform: translateX(40%);
+
+    }
+
+    .img {
+        width: 168px;
+        height: 252px;
+    }
+
+    .Gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 195px 195px;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+
+    }
+
+    .loca {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map {
+
+        width: 100% !important;
+
+
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .follow {
+        margin-left: 30%;
+    }
+
+    /*end index  */
+
+    /* contact */
+    .col1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 23.5%;
+        
+        gap: 0%;
+    }
+    .col2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        gap: 0%;
+        margin-top: 0%;
+       
+
+    }
+    .contact{
+        width:100% ;
+
+
+    }
+    input{
+        width: 240px;
+        height: 30px;
+
+
+    }
+    textarea{
+        width: 240px;
+        height: 70px;
+         transform: translateX(32%); 
+        
+
+        
+    }
+   .sub{
+    width: 100px;
+    height: 30px;
+    margin-left: 35%;
+    margin-top: 10%;
+   }
+
+
+   .menu-nav{
+    display: flex;
+    justify-content:space-between;
+   width: 100%;
+   height: 2%;
+   
+   }
+   .list{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 0%;
+    height: 1%;
+    transform: translateX(-5%);
+   }
+   .menu-card{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    margin-left: 20px;
+
+   }
+   .menu-card1{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    margin-left: 20px;
+
+   }
+   .menu-card2{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    margin-left: 20px;
+
+   }
+   .tcover{
+    width:auto ;
+    font-size: 23px;
+    font-weight: 100px;
+   }
+   .lis{
+
+    font-size: x-large;
+    font-weight: 50px; 
+    
+    margin:0% ;
+   }
+   .lis1{
+    font-size: x-large;
+    font-weight: 50px;
+    
+    margin: 0%;
+
+   }
+   #resp{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    
+   }
+   .canvas2{
+    /* transform: translateY(800%);
+    transform: translateX(-90%); */
+
+width: 100px !important;
+    margin-left: 0% !important;
+   }
+   .rest{
+    width: 100%;
+   
+
+   }
+    .panier{
+        position: absolute;
+        margin-top:50px ;
+        width:300px ;
+        height:400px ;
+        background-color: white;
+    }
+   #total{
+    width:200px ;
+    margin-left: 4%;
+   }
+   .plus1{
+    position: absolute;
+    left: 47%;
+    margin-top: 6%;
+    width: 50%;
+    z-index: 1;
+}
+   
+   .plus2{
+    position: absolute;
+    left: 49%;
+    width: 50%;
+    top: 210%;
+    z-index: 1;
+
+   }
+   .plus3{
+    position: absolute;
+    left: 49%;
+    top: 268%;
+    width: 50%;
+    z-index: 1;
+   }
+   .plus4{
+    width: 50%;
+    left: 150px;
+    z-index: 1;
+   }
+}

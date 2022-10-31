@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/responsive.css">
   <!-- Java Script -->
-  <link rel="stylesheet" href="/main.js">
+  <script  defer src="main.js"></script>
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
     </a>
     <div class="nav1">
 
-      <ul class="navbar-nav  ">
+      <ul class="navbar-nav"  id="togle-menu">
         <li class="nav-item ">
           <a class="nav-link" href="index.html">HOME</a>
         </li>
@@ -43,12 +43,12 @@
         <li class="nav-item">
           <a class="nav-link" href="Contact.html">CONTACT</a>
         </li>
+        <svg onclick="toggle0()" id="close_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
       </ul>
-      <svg id="navbar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     </div>
+     <svg  onclick="toggle()" id="navbar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="30" height="30"
-viewBox="0 0 30 30"
-style=" fill:#000000;"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path></svg>
-    </div>
+viewBox="0 0 30 30"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path></svg>
   </nav>
   <!-- end nav -->
   <!-- cover -->
