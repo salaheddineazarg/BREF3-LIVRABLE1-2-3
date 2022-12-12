@@ -1,7 +1,8 @@
 var total = 0;
 function moveToCarte(el){
-    
+     
     var clone = el.cloneNode(true);
+   
     total += parseInt(el.children[2].children[0].children[0].textContent);
     document.getElementById("pantest").appendChild(clone);
     document.getElementById("total").value = total ;
